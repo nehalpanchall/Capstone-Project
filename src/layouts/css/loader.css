@@ -1,0 +1,29 @@
+.fullscreen-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(150, 147, 158); /* Semi-transparent background */
+    display: flex; /* Center content vertically */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader-content {
+    text-align: center;
+  }
+  
+  .spinner {
+    width: 80px;
+    height: 80px;
+    border: 10px solid #f3f3f3; /* Loader border color */
+    border-radius: 50%;
+    border-top-color: #757575; /* Loader animation color */
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
